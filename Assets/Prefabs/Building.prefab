@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8248448347941969683}
   - component: {fileID: 6202508497657533156}
   - component: {fileID: 5931262142539852009}
+  - component: {fileID: 6615668966618606744}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -127,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  buildingPreview: {fileID: 0}
   icon: {fileID: 0}
   id: -1
   price: 100
@@ -145,6 +147,21 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   aimAtPoint: {fileID: 0}
+--- !u!114 &6615668966618606744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611099832268207486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a6ae35fdb544945849629bdc90bb23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  colorRenderers: []
 --- !u!1001 &5822369446899922734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -202,7 +219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8508094176755845473, guid: fce5ceef3a924644695556a6569b3e61, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8508094176755845473, guid: fce5ceef3a924644695556a6569b3e61, type: 3}
       propertyPath: m_SizeDelta.x
@@ -239,6 +256,10 @@ PrefabInstance:
     - target: {fileID: 8508094176755845487, guid: fce5ceef3a924644695556a6569b3e61, type: 3}
       propertyPath: m_Name
       value: HealthBarCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508094176755845487, guid: fce5ceef3a924644695556a6569b3e61, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fce5ceef3a924644695556a6569b3e61, type: 3}

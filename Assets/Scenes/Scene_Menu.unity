@@ -294,7 +294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5869791786873441770, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
       propertyPath: spawnPrefabs.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5869791786873441770, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
       propertyPath: offlineScene
@@ -312,6 +312,14 @@ PrefabInstance:
       propertyPath: spawnPrefabs.Array.data[3]
       value: 
       objectReference: {fileID: 7043448406241018292, guid: eb2b522a9eceb7c4db23495a066a6b43, type: 3}
+    - target: {fileID: 5869791786873441770, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
+      propertyPath: spawnPrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 7605248220166001708, guid: f6f0ea20d69191c4f9973725032cfcfe, type: 3}
+    - target: {fileID: 5869791786873441770, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
+      propertyPath: spawnPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 7605248220166001708, guid: 7e79533690bdbca46b9f167ce7d3ac99, type: 3}
     - target: {fileID: 5869791786873441771, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

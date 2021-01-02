@@ -15,6 +15,7 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     [SerializeField] private LayerMask floorMask = new LayerMask();
 
     private Camera mainCamera;
+    private BoxCollider buildingCollider;
     private RTSPlayer player;
     private GameObject buildingPreviewInstance;
     private Renderer buildingRendererInstance;
@@ -25,6 +26,7 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
         iconImage.sprite = building.GetIcon();
         priceText.text = building.GetPrice().ToString();
+        buildingCollider = building.GetComponent<BoxCollider>();
     }
 
     private void Update()
@@ -46,6 +48,12 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         {
             return;
         }
+
+        if(player.GetResources() < building.GetPrice())
+        {
+            return;
+        }
+
         buildingPreviewInstance = Instantiate(building.GetBuildingPreview());
         buildingPreviewInstance.SetActive(false);
         buildingRendererInstance = buildingPreviewInstance.GetComponentInChildren<Renderer>();
@@ -60,7 +68,7 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, floorMask))
         {
-            // Place building
+            player.CmdTryPlaceBuilding(building.GetId(), hit.point);
         }
 
         Destroy(buildingPreviewInstance);
@@ -73,11 +81,13 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         {
             return;
         }
-        Debug.Log("foo");
+
         buildingPreviewInstance.transform.position = hit.point;
         if(!buildingPreviewInstance.activeSelf)
         {
             buildingPreviewInstance.SetActive(true);
         }
+        Color color = player.CanPlaceBuilding(buildingCollider, hit.point) ? Color.green : Color.red;
+        buildingRendererInstance.material.SetColor("_BaseColor", color);
     }
 }
