@@ -311,15 +311,27 @@ PrefabInstance:
     - target: {fileID: 5869791786873441770, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
       propertyPath: spawnPrefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 7043448406241018292, guid: eb2b522a9eceb7c4db23495a066a6b43, type: 3}
+      objectReference: {fileID: 7219915072886355599, guid: 76b36e65df2000c4a9859e818eca341c, type: 3}
     - target: {fileID: 5869791786873441770, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
       propertyPath: spawnPrefabs.Array.data[4]
       value: 
-      objectReference: {fileID: 7605248220166001708, guid: f6f0ea20d69191c4f9973725032cfcfe, type: 3}
+      objectReference: {fileID: 2598990156194311256, guid: dd06edda058c08b40a37f69bda054f6f, type: 3}
     - target: {fileID: 5869791786873441770, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
       propertyPath: spawnPrefabs.Array.data[5]
       value: 
-      objectReference: {fileID: 7605248220166001708, guid: 7e79533690bdbca46b9f167ce7d3ac99, type: 3}
+      objectReference: {fileID: 812643834075308372, guid: ba9d693595160b8489ad99340a602469, type: 3}
+    - target: {fileID: 5869791786873441770, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
+      propertyPath: spawnPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 7605248220166001708, guid: 524e7a40303194d4db0b224bded1d6a4, type: 3}
+    - target: {fileID: 5869791786873441770, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
+      propertyPath: spawnPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 7605248220166001708, guid: f6f0ea20d69191c4f9973725032cfcfe, type: 3}
+    - target: {fileID: 5869791786873441770, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
+      propertyPath: spawnPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 7043448406241018292, guid: eb2b522a9eceb7c4db23495a066a6b43, type: 3}
     - target: {fileID: 5869791786873441771, guid: 9071d75cda7fce947847ab50b69ff051, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
